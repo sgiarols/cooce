@@ -14,10 +14,10 @@ st.write("The biogas upgrading to biomethane is modelled in two ways.")
 st.write("Existing systems use membrane separation for purifying the methane stream (AD).")
 st.write("A second way uses methanation where hydrogen is used to convert carbon dioxide into methane (ADH2).")
 
-st.image("/Users/sara/trainingCooCE/data/schematic.png")
+st.image("data/schematic.png")
 
 with st.sidebar:
-    st.sidebar.image("/Users/sara/trainingCooCE/data/cooce_logo.png")
+    st.sidebar.image("data/cooce_logo.png")
     st.write("Harnessing  potential of biogenic CO2 capture for Circular Economy")
 
 if "capacity" not in st.session_state:

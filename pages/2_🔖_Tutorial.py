@@ -9,10 +9,10 @@ st.title("Choose subsidisation")
 st.write("As a reminder, in the figure, you can see displayed the alternative configurations we will consider.")
 st.write("AD is basic anaerobic digestion, ADCHP includes co-generation, ADU is membrane-based biogas upgrading, ADH2 is the methanation process.")
 
-st.image("/Users/sara/trainingCooCE/data/schematic.png")
+st.image("data/schematic.png")
 
 with st.sidebar:
-    st.sidebar.image("/Users/sara/trainingCooCE/data/cooce_logo.png")
+    st.sidebar.image("data/cooce_logo.png")
     st.write("Harnessing  potential of biogenic CO2 capture for Circular Economy")
 
 if "capacity" not in st.session_state:

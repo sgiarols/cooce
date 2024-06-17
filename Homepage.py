@@ -15,7 +15,7 @@ st.title("Harnessing  potential of biogenic CO2 capture for Circular Economy")
 
 
 with st.sidebar:
-    st.sidebar.image("/Users/sara/trainingCooCE/data/cooce_logo.png")
+    st.sidebar.image("data/cooce_logo.png")
     add_name = st.text_input("Enter your name", "sara")
     st.write("Welcome ", add_name, ", to the CooCE project!")
     st.write("We will assess the possible options to valorise biogas.")
@@ -27,7 +27,7 @@ with st.sidebar:
 st.title("")
 
 st.write("CooCE is a EU-funded project")
-st.image("/Users/sara/trainingCooCE/data/homepage.png")
+st.image("data/homepage.png")
 
 
 st.write("In this tutorial, we will focus on the possible options to valorise biogas.", "\n")
