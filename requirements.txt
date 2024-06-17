@@ -1,7 +1,4 @@
 streamlit
 pandas
 numpy
-math
-random
-#import import_ipynb 
 os
