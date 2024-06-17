@@ -2,7 +2,7 @@ import numpy as np
 import os
 import pandas as pd
 import streamlit as st
-import import_ipynb
+#import import_ipynb
 import training as train
 
 st.set_page_config(page_title="Welcome", page_icon="✋🏼")
