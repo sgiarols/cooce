@@ -1,7 +1,7 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import math
-import random
+streamlit
+pandas
+numpy
+math
+random
 #import import_ipynb 
-import os
+os
