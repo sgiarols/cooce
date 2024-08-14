@@ -13,12 +13,15 @@ st.title("Harnessing  potential of biogenic CO2 capture for Circular Economy")
 #     ("Email", "Home phone", "Mobile phone")
 # )
 
-
+url ="https://www.imperial.ac.uk/"
 with st.sidebar:
+    st.write("Welcome to the CooCE project!")
     st.sidebar.image("data/cooce_logo.png")
-    add_name = st.text_input("Enter your name", "sara")
-    st.write("Welcome ", add_name, ", to the CooCE project!")
-    st.write("We will assess the possible options to valorise biogas.")
+    st.write("\n")
+    st.write("\n")
+    st.write("This application can help assess options to valorise biogas")
+    st.markdown("It has been realised by Dr. Sara Giarola, from [Imperial College London](https://www.imperial.ac.uk/)")
+    st.sidebar.image("data/Imperial_logo.png")
 
 
 
