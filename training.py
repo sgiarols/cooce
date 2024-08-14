@@ -165,6 +165,7 @@ class Assets:
 
         # H2 in t defined from cm/h
         refcapacity = CO2split * CO2density  
+        unitcons.loc[unitcons.index=="ADH2", "CO2"] = refcapacity
         unitcons.loc[unitcons.index=="ADH2", "H2"] = 0.18 * refcapacity
         #unitcons.loc[unitcons.index=="ADH2", "biogas"] = 1
 
@@ -279,9 +280,9 @@ class Assets:
         prices.loc["ADH2", "electricity"] = 0.044 #euro / kWh
         #https://www.statista.com/statistics/1047083/natural-gas-price-european-union-country/
         prices["heat"] = 0
-        prices["feedstock"] = -20 #euro/kWh
+        prices["feedstock"] = 0 #euro/kWh
         prices["H2"] = 0 #euro/t
-        prices.loc["ADH2", "CO2"] = 100 #euro/t
+        prices.loc["ADH2", "CO2"] = 0 #euro/t
         prices = prices.drop("capacity", axis=1)
 
         prices = prices[commodities] / 1000# keuro / kWh
@@ -300,11 +301,12 @@ class Assets:
         prices.loc["ADCHP", "electricity"] = 0.044  #euro / kWh
         prices.loc["ADU", "electricity"] = 0.044  #euro / kWh
         prices.loc["ADH2", "electricity"] = 0.044  #euro / kWh
-        prices["biomethane"] = 0.03  #euro / kWh
+        prices["biomethane"] = 0.0  #euro / kWh
         #https://www.statista.com/statistics/1047083/natural-gas-price-european-union-country/
         prices["heat"] = 0.06
         prices["feedstock"] = -20 #euro/kWh
         prices["H2"] = 3000 #euro/t
+        prices["ADH2", "CO2"] = 0 #euro/t
         prices = prices.drop("capacity", axis=1)
 
         prices = prices[commodities] / 1000# keuro / kWh
@@ -326,7 +328,7 @@ class Assets:
         if newprices.sum().sum() > 0:
             prices = newprices / 1000
         else:
-            costs = self.calc_prices()
+            prices = self.calc_prices()
         prices = self.calc_prices()
         production = self.calc_production(CO2split, biometyield, heatgen, elecgen)
         revenues = production * prices
