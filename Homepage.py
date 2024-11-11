@@ -21,6 +21,7 @@ with st.sidebar:
     st.write("\n")
     st.write("This application can help assess options to valorise biogas")
     st.markdown("It has been realised by Dr. Sara Giarola, from [Imperial College London](https://www.imperial.ac.uk/)")
+    st.markdown("Contacts: s.giarola10@imperial.ac.uk (Sara Giarola), r.diaz-chavez@imperial.ac.uk (Rocio Diaz-Chavez)")
     st.sidebar.image("data/Imperial_logo.png")
 
 

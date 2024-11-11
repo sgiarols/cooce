@@ -166,7 +166,7 @@ class Assets:
         # H2 in t defined from cm/h
         refcapacity = CO2split * CO2density  
         unitcons.loc[unitcons.index=="ADH2", "CO2"] = refcapacity
-        unitcons.loc[unitcons.index=="ADH2", "H2"] = 0.18 * refcapacity
+        unitcons.loc[unitcons.index=="ADH2", "H2"] = 0.15 * refcapacity
         #unitcons.loc[unitcons.index=="ADH2", "biogas"] = 1
 
         # feedstock kWh consumption as a function of unitprod of biogas in cm       
