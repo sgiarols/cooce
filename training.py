@@ -104,7 +104,7 @@ class Assets:
         #assumption on scaling factor
         capADH2 = self.assets.loc[self.assets.index=="AD"].values*CO2split
 
-        capital_costs.loc[capital_costs.index=="ADH2"] += 0.35 * (capADH2)**0.7 
+        capital_costs.loc[capital_costs.index=="ADH2"] += 0.06 * (capADH2)**0.7 
 
         capital_costs.columns = ["capital_costs"]
         return capital_costs
