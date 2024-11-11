@@ -156,7 +156,7 @@ class Assets:
         # electricity consumption as a function of unitprod of biogas in cm/h
         # electricity in kWh / cm of biogas
         CO2density = 1.98 / 10**3 #t/cm Wikipedia
-        methan_yield = 0.353 #CH4/CO2 initial https://www.sciencedirect.com/science/article/pii/S0016236123013923
+        methan_yield = 1.91 #0.353 CH4/CO2 initial https://www.sciencedirect.com/science/article/pii/S0016236123013923
         capacity = self.assets.loc[self.assets.index=="ADH2"].values[0]
         refvalue = unitcons.loc[unitcons.index=="ADU", "electricity"].values[0] 
         refcapacity =  methan_yield / CO2density / CO2split
