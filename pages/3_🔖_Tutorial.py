@@ -14,6 +14,13 @@ st.image("data/schematic.png")
 with st.sidebar:
     st.sidebar.image("data/cooce_logo.png")
     st.write("Harnessing  potential of biogenic CO2 capture for Circular Economy")
+    st.write("\n")
+    st.write("\n")
+    st.write("This application can help assess options to valorise biogas")
+    st.markdown("Designed by Dr. Sara Giarola", "\n", "Co-designed by Dr. Rocio Diaz-Chavez")
+    st.markdown("From [Imperial College London](https://www.imperial.ac.uk/)")
+    st.markdown("Contacts: Dr. Sara Giarola (s.giarola10@imperial.ac.uk), Dr. Rocio Diaz-Chavez (r.diaz-chavez@imperial.ac.uk)")
+    st.sidebar.image("data/Imperial_logo.png")
 
 if "capacity" not in st.session_state:
     st.session_state["capacity"] = 2700000
