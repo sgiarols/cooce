@@ -24,8 +24,8 @@ with st.sidebar:
     st.write("This application can help assess options to valorise biogas")
     st.markdown("Designed by Dr. Sara Giarola")
     st.markdown("Co-designed by Dr. Rocio Diaz-Chavez")
-    st.markdown("[Imperial College London](https://www.imperial.ac.uk/)")
     st.markdown("Contacts: Dr. Sara Giarola (s.giarola10@imperial.ac.uk), Dr. Rocio Diaz-Chavez (r.diaz-chavez@imperial.ac.uk)")
+    st.markdown("[Imperial College London](https://www.imperial.ac.uk/)")
     st.sidebar.image("data/Imperial_logo.png")
 
 if "capacity" not in st.session_state:
